@@ -30,8 +30,8 @@ Retrieved data is curated:
 
 # Usage Information:
 Please run all the scripts in following order: 
-  For simplified .csv output: module_1 -> module_2 -> module_3
-  For .json output: module_1 -> module_2 -> module_4_parsing_json
+  - For simplified .csv output: module_1 -> module_2 -> module_3
+  - For .json output: module_1 -> module_2 -> module_4_parsing_json
 
 Module 1 requires requires user input (one or more taxa of interest, separated by '|') - for example: Clitellata|Collembola.
 All other modules will use output files from previous modules as their input. 
