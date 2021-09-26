@@ -20,6 +20,18 @@ Retrieved data is curated:
 - total number of results, which passes thresholds is specified;
 
 
+
+<img width=“964” alt=“java 8 and prio java 8  array review example” src=“https://github.com/LukaszSitko/Bold_Join/blob/master/Examples/Diagram.jpg
+”>
+
+
+
+
+
+
+
+
+
 # Usage Information:
 Please run all the scripts in following order: 
   For simplified .csv output: module_1 -> module_2 -> module_3
