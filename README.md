@@ -19,11 +19,7 @@ Retrieved data is curated:
 - total number of results from Bold is specified;
 - total number of results, which passes thresholds is specified;
 
-
-
-<img width=“964” alt=“java 8 and prio java 8  array review example” src=“https://github.com/LukaszSitko/Bold_Join/blob/master/Examples/Diagram.jpg
-”>
-
+![Diagram](https://user-images.githubusercontent.com/69317662/134813923-50f61eb4-a351-4c23-9984-3593a09bf8ce.jpg)
 
 
 
