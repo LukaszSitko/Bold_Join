@@ -36,4 +36,4 @@ All other modules will use output files from previous modules as their input.
 
 
 # Project information 
-This project was performed as part of COST Action (CA18237). 
+This project was performed as part of the EUdaphobase COST Action (CA18237) www.EUdaphobase.org.
