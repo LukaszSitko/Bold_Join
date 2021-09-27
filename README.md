@@ -7,7 +7,7 @@ Retrieved data needs to contain following information, which were set as thresho
 - BIN (Barcode Index Number) 
 - Country of collection
 - Collectors information 
-- Identification information
+- Specimen identification 
 - Geolocation: longitude and lattitude 
 - Collection date (if possible)
 
