@@ -9,7 +9,7 @@ sys.setrecursionlimit(10**6)
 with open('data_1.txt') as x:
     new_list = json.load(x)
 
-header = ['Record ID', 'Process ID', 'BIN', 'Phylum','Phylum ID','Class','Class ID','Order','Order ID','Family','Family ID', 'Genus','Genus ID', 'Species','Species ID', 'Collected by:', 'Country', 'Latitude', 'Longitude','Date']
+header = ['Process ID', 'BIN', 'Phylum','Phylum ID','Class','Class ID','Order','Order ID','Family','Family ID', 'Genus','Genus ID', 'Species','Species ID', 'Collected by:', 'Country', 'Latitude', 'Longitude','Date']
 
 date = datetime.datetime.now().date()
 date = str(date)
@@ -212,7 +212,7 @@ while j < len(new_list):
     print('Progress: ', j,)
     #If family exist save to file
     if family !=' ' and 'family' in taxonomy.keys() or 'family' in new_list[j].keys():
-        data = [new_list[j]['record_id'], new_list[j]['processid'], new_list[j]['bin_uri'], phylum,phylum_taxid, tclass,tclass_taxid, order,order_taxid, family,family_taxid, genus, genus_taxid, species, species_taxid, new_list[j]['collectors'], new_list[j]['country'], new_list[j]['lat'], new_list[j]['lon'], head]
+        data = [new_list[j]['processid'], new_list[j]['bin_uri'], phylum,phylum_taxid, tclass,tclass_taxid, order,order_taxid, family,family_taxid, genus, genus_taxid, species, species_taxid, new_list[j]['collectors'], new_list[j]['country'], new_list[j]['lat'], new_list[j]['lon'], head]
 
         with open(file_name, 'a') as f:
             writer = csv.writer(f)
