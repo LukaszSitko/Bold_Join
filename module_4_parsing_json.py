@@ -220,6 +220,7 @@ while j < len(new_list):
             new_list[j].pop('specimen_identifiers')
 
     if family !=' ' and 'family' in taxonomy.keys() and new_list[j]['country'] in cost_countries:
+        new_list[j].pop('record_id')
         output_list.append(new_list[j])
 
         with open('Output.json', 'w') as f:
@@ -229,7 +230,3 @@ while j < len(new_list):
         j=j+1
 
 print('Progress: Completed')
-
-
-
-
