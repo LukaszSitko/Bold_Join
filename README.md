@@ -14,6 +14,7 @@ Retrieved data is curated:
 - only results with geolocation info are saved;
 - total number of results from Bold is specified;
 - total number of results, which passes thresholds is specified;
+- taxonomic information of all specimen data are compared with NCBI Taxonomy Browser, and if conflict is detected - marked as "To review"
 
 ![Diagram](https://user-images.githubusercontent.com/69317662/134813923-50f61eb4-a351-4c23-9984-3593a09bf8ce.jpg)
 
