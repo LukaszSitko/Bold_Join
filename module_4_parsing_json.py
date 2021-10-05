@@ -200,10 +200,13 @@ while j < len(new_list):
 
     if 'read' in new_list[j].keys():
         new_list[j]['read']=new_list[j]['read'][0]
-        if 'markercode' in new_list[j]['read'].keys():
+        if 'markercode' in new_list[j]['read'].keys() or 'run_date' in new_list[j]['read'].keys():
             #print(new_list[j]['read']['markercode'])
             markercode=new_list[j]['read']['markercode']
             markercode={'markercode':markercode}
+            run_date=new_list[j]['read']['run_date']
+            run_date={'run_date':run_date}
+            new_list[j].update(run_date)
             new_list[j].update(markercode)
             new_list[j].pop('read')
         else:
@@ -221,6 +224,11 @@ while j < len(new_list):
 
     if family !=' ' and 'family' in taxonomy.keys() and new_list[j]['country'] in cost_countries:
         new_list[j].pop('record_id')
+        new_list[j].pop('country')
+        new_list[j].pop('collectors')
+        new_list[j].pop('lat')
+        new_list[j].pop('lon')
+
         output_list.append(new_list[j])
 
         with open('Output.json', 'w') as f:
