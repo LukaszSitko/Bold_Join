@@ -11,7 +11,7 @@ crucial_values_1=['collection_event']
 new_list=[]
 curated=[]
 redflags=[]
-key_list = ['processid', 'record_id', 'bin_uri', "collectors", 'country', 'lat', 'lon', 'taxonomy','read','markercode','institution_storing']
+key_list = ['processid', 'record_id', 'bin_uri', "collectors", 'country', 'lat', 'lon', 'taxonomy','read','markercode','institution_storing','run_date','collection_event']
 results_id=[]
 
 
