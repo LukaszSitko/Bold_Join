@@ -91,6 +91,14 @@ if 'x' not in redflags:
                 if 'specimen_identifiers' in zero[g].keys() and 'specimen_identifiers' in zero[h].keys():
                     if zero[g]['specimen_identifiers']['institution_storing'] not in zero[g]['specimen_identifiers']['institution_storing']:
                         zero[h]['specimen_identifiers']['institution_storing'] = zero[h]['specimen_identifiers']['institution_storing'] + ' | ' + zero[g]['specimen_identifiers']['institution_storing']
+            if  zero[h]['bin_uri'] == zero[g]['bin_uri'] and zero[h]['taxonomy'] == zero[g]['taxonomy'] and zero[h]['lat'] == zero[g]['lat'] and zero[h]['lon'] == zero[g]['lon'] and h < g:
+                if 'read' in zero[g].keys() and 'read' in zero[h].keys():
+                    if 'run_date' in zero[g]['read'][0].keys() and 'run_date' in zero[h]['read'][0].keys():
+                        if zero[g]['read'][0]['run_date'] not in zero[h]['read'][0]['run_date']:
+                            zero[h]['read'][0]['run_date'] = zero[h]['read'][0]['run_date'] + ' | ' + zero[g]['read'][0]['run_date']
+                    if 'run_date' in zero[g]['read'][0].keys() and 'run_date' not in zero[h]['read'][0].keys():
+                        date=zero[g]['read'][0]['run_date']
+                        zero[h]['read'][0].update({'run_date':date})
 
     for h in hits:
         if zero[h]['record_id']!='duplicate':
